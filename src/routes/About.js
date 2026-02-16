@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div>
       <BackGroundImg heading="ABOUT." 
-      text="I am a friendly Front End Developer"/>
+      text="I am a friendly Software Engineer"/>
       <AboutContent/>
       <Footer/>
     </div>

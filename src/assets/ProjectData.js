@@ -8,63 +8,108 @@ import RequestEase from './RequestEase.png'
 import adminPanelImg from './admin-panel.png'
 
 
-const projectCardData=[
-    {
-        imgsrc:adminPanelImg,
-        title:'Admin panel to track shipment:',
-        about:'This Admin Panel, built with Angular 16, allows seamless management of users, products, and shipments. It features an intuitive interface for editing product details, tracking shipments with imgUrl and updatedOn fields, and managing users with role-based access. The modular design, with admin and auth modules, ensures code efficiency, while popup dialogs maintain workflow visibility. Responsive and scalable, it provides a powerful backend management solution.',
-        view:'https://github.com/Rahul7549/shipment-admin-ui',
-        source:"https://github.com/Rahul7549/shipment-admin-ui"
-    },
+// const projectCardData=[
+//     {
+//         imgsrc:netflixImg,
+//         title:"NETFLIX CLONE:",
+//         about:"Created a Netflix clone using ReactJS and consuming prebuilt TMDB APIs using axios and hosted it on Firebase Country",
+//         view:"https://netflix-clone-e7320.web.app/",
+//         source:'https://github.com/Rahul7549/netflix_clone'
+//     },
+//     {
+//         imgsrc:adminPanelImg,
+//         title:'Admin panel to track shipment:',
+//         about:'This Admin Panel, built with Angular 16, allows seamless management of users, products, and shipments. It features an intuitive interface for editing product details, tracking shipments with imgUrl and updatedOn fields, and managing users with role-based access. The modular design, with admin and auth modules, ensures code efficiency, while popup dialogs maintain workflow visibility. Responsive and scalable, it provides a powerful backend management solution.',
+//         view:'https://github.com/Rahul7549/shipment-admin-ui',
+//         source:"https://github.com/Rahul7549/shipment-admin-ui"
+//     },
     
-    {
-        imgsrc:RequestEase,
-        title:'RequestEase:',
-        about:'The application features a user-friendly architecture, comprising specific modules for administrators and regular users. Normal users can easily request service activation through an intuitive interface, simplifying navigation and selection of desired services. Additionally, administrators have access to all requests across the application, enabling them to approve or deny requests.',
-        view:'https://rahul7549.github.io/user-service.github.io/',
-        source:"https://github.com/Rahul7549/user-service.github.io"
-    },
+//     {
+//         imgsrc:RequestEase,
+//         title:'RequestEase:',
+//         about:'The application features a user-friendly architecture, comprising specific modules for administrators and regular users. Normal users can easily request service activation through an intuitive interface, simplifying navigation and selection of desired services. Additionally, administrators have access to all requests across the application, enabling them to approve or deny requests.',
+//         view:'https://rahul7549.github.io/user-service.github.io/',
+//         source:"https://github.com/Rahul7549/user-service.github.io"
+//     },
     
-    {
-        imgsrc:screenCareImg,
-        title:'SKIN CARE PRODUCT PERFORMANCE ANALYST:',
-        about:'This web Application is developed using Angular and Spring MVC technology that help the Analys to analyse the effect of Unileaver’s skin care product performance’s on different geometric area.',
-        view:'',
-        source:''
-    },
+//     // {
+//     //     imgsrc:screenCareImg,
+//     //     title:'SKIN CARE PRODUCT PERFORMANCE ANALYST:',
+//     //     about:'This web Application is developed using Angular and Spring MVC technology that help the Analys to analyse the effect of Unileaver’s skin care product performance’s on different geometric area.',
+//     //     view:'',
+//     //     source:''
+//     // },
     
-    {
-        imgsrc:covidTrakerImg,
-        title:'COVID TRACKER WEB APP:',
-        about:'Made ReactJs personal project that help to track the current covid status across the world and Representing using bubble graph, there are 4 module and those are Coronavirus Cases, Recovered,Deaths and Live Cases by Country.',
-        view:'https://rahul7549.github.io/covid-tracker/',
-        source:"https://github.com/Rahul7549/covid-tracker"
-    },
-    {
-        imgsrc:curatusImg,
-        title:'CURATUS:',
-        about:'Curatus acts as a central repository for curated documents, especially patent-focused technology or competitor analyses. It streamlines the sharing process via email by housing tagged, annotated, and cataloged documents. It fosters easy collaboration among stakeholders',
-        // about:'Curatus is a repository of curated documents that are a result of technology or competitor analysis. A significant portion of these analyses are focused on patents and the findings from these analyses are typically shared over email and may vary from request to request. Curatus attempts to streamline this process by serving as a central repository where all these documents (suitably tagged, annotated and catalogued) and allowing for simple collaboration across all stakeholders.',
-        view:'https://curatus.biginfolabs.com/',
-        source:"https://biginfolabs.com/"
+//     {
+//         imgsrc:covidTrakerImg,
+//         title:'COVID TRACKER WEB APP:',
+//         about:'Made ReactJs personal project that help to track the current covid status across the world and Representing using bubble graph, there are 4 module and those are Coronavirus Cases, Recovered,Deaths and Live Cases by Country.',
+//         view:'https://rahul7549.github.io/covid-tracker/',
+//         source:"https://github.com/Rahul7549/covid-tracker"
+//     },
+//     // {
+//     //     imgsrc:curatusImg,
+//     //     title:'CURATUS:',
+//     //     about:'Curatus acts as a central repository for curated documents, especially patent-focused technology or competitor analyses. It streamlines the sharing process via email by housing tagged, annotated, and cataloged documents. It fosters easy collaboration among stakeholders',
+//     //     // about:'Curatus is a repository of curated documents that are a result of technology or competitor analysis. A significant portion of these analyses are focused on patents and the findings from these analyses are typically shared over email and may vary from request to request. Curatus attempts to streamline this process by serving as a central repository where all these documents (suitably tagged, annotated and catalogued) and allowing for simple collaboration across all stakeholders.',
+//     //     view:'https://curatus.biginfolabs.com/',
+//     //     source:"https://biginfolabs.com/"
         
-    },
-    {
-        imgsrc:weatherStatusImg,
-        title:'Weather Application:',
-        about:'Made ReactJs personal project that help to track the weather status in period of three hour cross the cities.',
-        view:'https://rahul7549.github.io/weather-status/',
-        source:"https://github.com/Rahul7549/weather-status"
-    },
-    {
-        imgsrc:netflixImg,
-        title:"NETFLIX CLONE:",
-        about:"Created a Netflix clone using ReactJS and consuming prebuilt TMDB APIs using axios and hosted it on Firebase Country",
-        view:"https://netflix-clone-e7320.web.app/",
-        source:'https://github.com/Rahul7549/netflix_clone'
-    },
+//     // },
+//     {
+//         imgsrc:weatherStatusImg,
+//         title:'Weather Application:',
+//         about:'Made ReactJs personal project that help to track the weather status in period of three hour cross the cities.',
+//         view:'https://rahul7549.github.io/weather-status/',
+//         source:"https://github.com/Rahul7549/weather-status"
+//     },
     
     
-]
+    
+// ]
+
+const projectCardData = [
+  {
+    imgsrc: netflixImg,
+    title: "Netflix Clone",
+    about:
+      "Developed a Netflix-inspired streaming UI using React and TMDB APIs. Implemented dynamic movie browsing, responsive layouts, and API-driven content rendering. Deployed the application on Firebase for seamless global access.",
+    view: "https://netflix-clone-e7320.web.app/",
+    source: "https://github.com/Rahul7549/netflix_clone",
+  },
+  {
+    imgsrc: adminPanelImg,
+    title: "Shipment Management Admin Panel",
+    about:
+      "Built a scalable admin dashboard using Angular 16 to manage users, products, and shipment workflows. Implemented role-based access control, modular architecture, and interactive dialogs for efficient operations and real-time tracking.",
+    view: "https://github.com/Rahul7549/shipment-admin-ui",
+    source: "https://github.com/Rahul7549/shipment-admin-ui",
+  },
+  {
+    imgsrc: RequestEase,
+    title: "RequestEase Service Portal",
+    about:
+      "Designed a service request management platform with dedicated user and admin modules. Enabled streamlined service activation requests, approval workflows, and centralized request tracking to enhance operational efficiency.",
+    view: "https://rahul7549.github.io/user-service.github.io/",
+    source: "https://github.com/Rahul7549/user-service.github.io",
+  },
+  {
+    imgsrc: covidTrakerImg,
+    title: "COVID-19 Global Tracker",
+    about:
+      "Created a data visualization dashboard using React to monitor global COVID-19 statistics. Integrated real-time APIs and interactive charts to display cases, recoveries, and country-level insights.",
+    view: "https://rahul7549.github.io/covid-tracker/",
+    source: "https://github.com/Rahul7549/covid-tracker",
+  },
+  {
+    imgsrc: weatherStatusImg,
+    title: "Weather Forecast Application",
+    about:
+      "Developed a weather forecasting app using React with API integration to display real-time weather updates and short-term forecasts across multiple cities with a clean and responsive UI.",
+    view: "https://rahul7549.github.io/weather-status/",
+    source: "https://github.com/Rahul7549/weather-status",
+  },
+];
+
 
 export default projectCardData;
