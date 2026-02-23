@@ -1,0 +1,264 @@
+/* ============================= */
+/* SECTION WRAPPER */
+/* ============================= */
+
+.project-row-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.project-row-wrapper:not(:last-child) {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ============================= */
+/* ROW LAYOUT */
+/* ============================= */
+
+.project-row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.project-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* equal width */
+.project-media,
+.project-content {
+  flex: 0 0 50%;
+  max-width: 48%;
+}
+
+/* ============================= */
+/* IMAGE SECTION */
+/* ============================= */
+
+.project-media {
+  position: relative;
+}
+
+/* main image */
+.media-main {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.media-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.media-main:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+/* ============================= */
+/* ARROW BUTTONS */
+/* ============================= */
+
+.arrow-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+
+  height: 48px;
+  width: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0,0,0,0.35);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: all 0.25s ease;
+  z-index: 2;
+  border-radius: 6px;
+}
+
+.arrow-btn:hover {
+  background: rgba(46,42,42,0.8);
+  font-weight: 700;
+}
+
+.arrow-btn.left { left: 12px; }
+.arrow-btn.right { right: 12px; }
+
+/* ============================= */
+/* THUMBNAIL STRIP */
+/* ============================= */
+
+.thumbnail-overlay {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  max-width: 90%;
+}
+
+.thumbnail-overlay::-webkit-scrollbar {
+  display: none;
+}
+
+/* thumbnails */
+.thumbnail {
+  height: 40px;
+  width: auto;
+  object-fit: cover;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+
+  border: 2px solid transparent;
+  flex-shrink: 0;
+  max-width: 90px;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.thumbnail.active {
+  opacity: 1;
+  border-color: rgb(248,217,15);
+}
+
+/* ============================= */
+/* CONTENT SECTION */
+/* ============================= */
+
+.project-content {
+  text-align: left;
+  padding: 0; /* important for symmetry */
+}
+
+.project-content h2 {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin-bottom: 1rem;
+}
+
+.project-content p {
+  color: rgba(255,255,255,0.85);
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+}
+
+.project-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .project-row {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-row,
+  .project-row.reverse {
+    flex-direction: column;
+  }
+
+  .project-media,
+  .project-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .media-main {
+    height: 260px;
+  }
+}
+
+
+/* ============================= */
+/* MOBILE CARD LAYOUT */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .project-row-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .project-row,
+  .project-row.reverse {
+    flex-direction: column;
+    gap: 18px;
+    background: #1a1919;           /* card surface */
+    border-radius: 10px;
+    padding: 16px;
+  }
+
+  .project-media,
+  .project-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .media-main {
+    height: 220px;
+    border-radius: 8px;
+  }
+
+  .thumbnail-overlay {
+    bottom: 8px;
+    height: 42px;
+    padding: 4px 6px;
+  }
+
+  .thumbnail {
+    height: 34px;
+  }
+
+  .project-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-content p {
+    font-size: 0.95rem;
+  }
+
+  .project-actions {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
