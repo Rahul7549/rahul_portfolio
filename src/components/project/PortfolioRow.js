@@ -1,4 +1,4 @@
-import React, { useId, useState } from "react";
+// import { useId } from "react";
 import ProjectCarousel from "./ProjectCarousel";
 import ProjectContent from "./ProjectContent";
 import "./project-row.css";
@@ -7,8 +7,8 @@ import { newProjectCardData } from "../../assets/ProjectData";
 const PortfolioRow = () => {
   // const isReverse = index % 2 !== 0 ||0;
   // const [index,setIindex]=useState(0);
-  const useCarouselKey = useId();
-  const useDescKey = useId();
+  // const useCarouselKey = useId();
+  // const useDescKey = useId();
 
 
   // return (
