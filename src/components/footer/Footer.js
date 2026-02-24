@@ -7,7 +7,7 @@ export default function Footer() {
       <div className='footer-container'>
         <div className='left'>
           <div className='location'>
-{/* Room Number 403 , Shirdi Sai PG, Lakshminarayana Pura, Munnekollal, Bengaluru, Karnataka 560037 */}
+
             <FaHome size={20}
               style={{ color: "#fff", marginRight: "2rem" }} />
             <p>Marathahalli, Bengaluru, Karnataka 560037, India</p>
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
         <div className='right'>
           <h4>About Me</h4>
-          <p>
+          <p className="about-text">
             I’m a results-oriented software developer passionate about crafting responsive and reliable web applications using Angular, TypeScript, and modern frontend practices. Experienced in performance optimization, state management, and secure authentication flows, I enjoy collaborating with cross-functional teams to deliver scalable solutions that solve real business challenges. I continuously strive to improve code quality, user experience, and development efficiency in every project I work on.
           </p>
           <div className='social'>
